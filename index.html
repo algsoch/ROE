@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ROE Preparation Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A6FFF;
+            --secondary: #8C43FF;
+            --accent: #ff6b6b;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --bg-light: #f9fafb;
+            --bg-white: #ffffff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.05);
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding-bottom: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--bg-white);
+            padding: 0;
+            box-shadow: var(--shadow);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            margin-right: 15px;
+            border-radius: 2px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .highlight:hover {
+            color: var(--secondary);
+        }
+
+        .image-container {
+            margin: 30px 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.02);
+        }
+
+        .resource-list {
+            list-style-type: none;
+            margin: 25px 0;
+        }
+
+        .resource-list li {
+            background: var(--bg-light);
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .resource-list li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        .resource-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: 15px;
+            color: var(--primary);
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #2c3e50, #4c6ef5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+        }
+
+        .emoji {
+            font-size: 1.2rem;
+            margin-left: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                width: auto;
+            }
+            .learn {
+                font-size: 1.1rem;
+                color: #e2c8af;
+                border:12px;
+                border-radius: #8daac8;
+            }
+            
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>My Journey in Preparing for ROE</h1>
+            <p class="learn">Learning, challenges, and growth on the path to becoming a better developer</p>
+        </div>
+        
+        <div class="content">
+            <h2><i class="fas fa-mountain-sun"></i> Challenges Faced</h2>
+            <div class="card">
+                <p>
+                    One of the biggest challenges I faced while preparing for ROE was my lack of understanding of <span class="highlight">API integration</span>. Initially, I was confused about how to connect APIs with LLM models, which led to frustration. However, after watching several tutorials on YouTube, I learned about <span class="highlight">Streamlit, FastAPI, LLM models, Ollama, and open-source LLMs</span>. 
+                </p>
+                <p>
+                    Another challenge was working with <span class="highlight">file extractions</span>, such as handling JSON, CSV, and PDFs. I explored modules like <span class="highlight">pdfplumber, JSON handling, and CSV extraction</span>, which helped me gain confidence. Docker was another roadblock since I had skipped the relevant lecture. To overcome this, I referred to Apni College's tutorial on YouTube and successfully learned how to create images and containers. 
+                </p>
+                <p>
+                    I also explored <span class="highlight">ngrok</span> for global hosting, which was a new concept for me. Before this, I only knew about GitHub Pages. While preparing for ROE, I significantly improved my understanding of web scraping using <span class="highlight">requests, Scrapy</span>, and <span class="highlight">pandas</span>. Despite all this learning, I still face some difficulties in GitHub Actions and graph routing problems.
+                </p>
+            </div>
+
+            <h2><i class="fas fa-lightbulb"></i> Most Useful Resources</h2>
+            <ul class="resource-list">
+                <li><span class="highlight">TDS</span>–The resouce provided taugh me lot like understanding concept and applying that and it introduced to me great youtuber that teach technology</li>
+                <
+                <li><span class="highlight">Apni College</span> – Helped me learn Docker and other concepts.</li>
+                <li><span class="highlight">YouTube</span> – Helped me learn Docker, pandas, NumPy, FastAPI, Streamlit, and LangChain.</li>
+                <li><span class="highlight">VS Code & GitHub Copilot</span> – Assisted in writing efficient code.</li>
+                <li><span class="highlight">Google & Wikipedia</span> – Helped with troubleshooting errors and learning new concepts.</li>
+                <li><span class="highlight">ChatGPT</span> – Aided in debugging and solving coding challenges.</li>
+            </ul>
+
+            <h2><i class="fas fa-chart-line"></i> Areas for Improvement</h2>
+            <p>
+                Through this experience, I have gained valuable skills and confidence in solving real-world industry problems. I now feel capable of building applications with multiple functionalities. Recently, I even developed a <span class="highlight">Gemini AI chatbot</span> that allows users to interact with professionals for guidance.
+            </p>
+            <p></p>
+
+            <div class="image-container">
+                <h1>Gemini AI Chatbot</h1>
+                <img src="gemini.png" alt="Gemini AI Chatbot">
+            </div>
+
+            <div class="card">
+                <p>
+                    I could have improved my approach by structuring my learning more efficiently and practicing GitHub Actions and distance graph routing more thoroughly. However, I am proud of the progress I have made and the knowledge I have gained.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Thank You for this Course<span class="emoji">🚀</span></p>
+        </div>
+    </div>
+</body>
+</html>
