@@ -187,10 +187,18 @@
                 width: auto;
             }
             .learn {
-                font-size: 1.1rem;
-                color: #e2c8af;
-                border:12px;
+                font-size: 1rem;
+                color: #100f0f;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 1000;
+                font-display: swap;
+                /* flex-direction: row; */
+                font-style: italic;
+                /* border:.5em double #9e30c3; */
                 border-radius: #8daac8;
+                /* font-variant-emoji: #8daac8; */
+                /* font-variant-caps: #8daac8; */
+
             }
             
             .hero {
@@ -258,8 +266,61 @@
                 <p>
                     I could have improved my approach by structuring my learning more efficiently and practicing GitHub Actions and distance graph routing more thoroughly. However, I am proud of the progress I have made and the knowledge I have gained.
                 </p>
+                <p>
+                    <div class="special-box">
+                        <p>
+                            I would like to express my deepest gratitude to the <span class="highlight">TDS instructors and professors</span>. Their guidance and the resources they provided were nothing short of fabulous and amazing. The structured approach and the wealth of knowledge they shared have been instrumental in my learning journey. I am truly thankful for their support and dedication.
+                        </p>
+                    </div>
+                </p>
             </div>
         </div>
+        <h2><i class="fas fa-chart-bar"></i> Learning Progress</h2>
+        <div class="card">
+            <canvas id="learningChart" width="400" height="200"></canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const ctx = document.getElementById('learningChart').getContext('2d');
+            const learningChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                datasets: [{
+                label: 'Learning Progress',
+                data: [20, 40, 60, 80, 90, 100],
+                backgroundColor: 'rgba(74, 111, 255, 0.2)',
+                borderColor: 'rgba(74, 111, 255, 1)',
+                borderWidth: 2,
+                fill: true,
+                tension: 0.1
+                }]
+            },
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                    display: true,
+                    text: 'Proficiency (%)'
+                    }
+                },
+                x: {
+                    title: {
+                    display: true,
+                    text: 'Time (Weeks)'
+                    }
+                }
+                },
+                plugins: {
+                legend: {
+                    display: false
+                }
+                }
+            }
+            });
+        </script>
 
         <div class="footer">
             <p>Thank You for this Course<span class="emoji">🚀</span></p>
